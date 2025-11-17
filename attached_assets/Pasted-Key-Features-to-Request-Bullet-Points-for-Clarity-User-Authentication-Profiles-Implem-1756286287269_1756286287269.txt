@@ -1,0 +1,21 @@
+Key Features to Request (Bullet Points for Clarity):
+• User Authentication & Profiles:
+    ◦ "Implement user registration, login, and secure password management."
+    ◦ "Each user needs a profile page displaying their overall accuracy, a history of their predictions, and a summary of their performance metrics."
+    ◦ "Integrate a subscription payment gateway (e.g., Stripe) for premium features, updating user status in the 'Users' table in Airtable."
+• Prediction Submission Interface:
+    ◦ "Create a form allowing users to submit new predictions. This form should map directly to fields in my 'Predictions' Airtable table (e.g., 'Prediction Text', 'Confidence Level', 'Prediction Date', 'Category', 'Target Date')."
+    ◦ "Allow users to select from predefined categories, which are also stored in an Airtable table ('Categories')."
+• Outcome & Verification System:
+    ◦ "Develop a mechanism for users to submit the actual outcome of their predictions post-factum. This should update the 'Outcome' field in the 'Predictions' Airtable table."
+    ◦ "Implement a way for users to be reminded to update outcomes for predictions whose 'Target Date' has passed (potentially leveraging Airtable Automations for trigger data)."
+    ◦ "Consider a 'verification' system where certain outcomes (e.g., for major sports events) can be officially marked by an admin or verified by multiple users."
+• Dynamic Leaderboards & Rankings:
+    ◦ "Build a real-time leaderboard section that displays the most accurate users based on a calculated accuracy score (e.g., Brier score or custom accuracy metric). This data is derived from the 'Predictions' table in Airtable and should be sortable by overall, category, and time frame."
+    ◦ "Each user's position and score should be prominently displayed on their profile."
+• Public Prediction Feeds & Community Engagement:
+    ◦ "Display a feed of recent public predictions, filterable by category or popularity."
+    ◦ "Allow users to view other users' public predictions and their accuracy scores (without revealing private prediction details unless explicitly shared)."
+    ◦ "Consider basic commenting functionality on predictions (data stored in Airtable 'Comments' table)."
+• Admin Dashboard:
+    ◦ "Create a simple admin panel for managing users, categories, and potentially monitoring content. This could potentially be built using Airtable's own Interfaces for internal use, offering a powerful, no-code way to interact with your data directly."
